@@ -78,9 +78,13 @@ for i in X:
         
 state_list = pool.map(ss, data_pairs_small)
 
-     
 
-if mode == 1:
+if mode == 0:
+        # save state_list
+    with open('state_g_full_standard_StoU.txt', 'wb') as F:
+          pickle.dump(state_list, F)  
+
+elif mode == 1:
         # save state_list
     with open('state_g_1x_standard_StoU.txt', 'wb') as F:
           pickle.dump(state_list, F)
