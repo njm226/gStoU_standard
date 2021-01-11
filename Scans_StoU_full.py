@@ -325,9 +325,15 @@ for i in range(len(data_pairs)):
     
 
      
+if mode == 0:
+    
 
         
-if mode == 1:
+    # save Timing list
+    with open('b_list_full_S20_standard_StoU.txt', 'wb') as F:
+        pickle.dump(b_value_list, F)
+        
+elif mode == 1:
     
 
         
