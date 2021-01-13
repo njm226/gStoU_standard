@@ -21,28 +21,28 @@ pool = multiprocessing.Pool(multiprocessing.cpu_count())
 mode = 3
     
 if mode == 1:
-    X_Y=[[153,70,70, 1]]
-    X_Y_sm=[[182,70,70, 1]]
-    X_Y_sl=[[191,70,70, 1]]
-    X_Y_max=[[203,70,70, 1]]
+    X_Y=[[153,70,50, 1]]
+    X_Y_sm=[[182,70,50, 1]]
+    X_Y_sl=[[191,70,50, 1]]
+    X_Y_max=[[203,70,50, 1]]
     
 elif mode == 2:
-    X_Y=[[153, 100, 100, 2]]
-    X_Y_sm=[[182, 100, 100, 2]]
-    X_Y_sl=[[191, 100, 100, 2]]
-    X_Y_max=[[203, 100, 100, 2]]
+    X_Y=[[153, 50, 140, 2]]
+    X_Y_sm=[[182, 50, 140, 2]]
+    X_Y_sl=[[191, 50, 140, 2]]
+    X_Y_max=[[203, 50, 140, 2]]
     
 elif mode == 3:
-    X_Y=[[153, 100, 70, 3]]
-    X_Y_sm=[[182, 100, 70, 3]]
-    X_Y_sl=[[191, 100, 70, 3]]
-    X_Y_max=[[203, 100, 70, 3]]
+    X_Y=[[153, 60, 100, 3]]
+    X_Y_sm=[[182, 60, 100, 3]]
+    X_Y_sl=[[191, 60, 100, 3]]
+    X_Y_max=[[203, 60, 100, 3]]
     
 elif mode == 4:
-    X_Y=[[153, 90, 95, 4]]
-    X_Y_sm=[[182, 90, 95, 4]]
-    X_Y_sl=[[191, 90, 95, 4]]
-    X_Y_max=[[203, 90, 95, 4]]
+    X_Y=[[153, 130, 30, 4]]
+    X_Y_sm=[[182, 130, 30, 4]]
+    X_Y_sl=[[191, 130, 30, 4]]
+    X_Y_max=[[203, 130, 30, 4]]
 
 
 reps=10000
@@ -353,161 +353,161 @@ EcoRV_total_max = (sum(EcoRV_list_max))/reps
 
 
 
-if mode == 1:
-    # save state_list
-    with open('cenH_small_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
-        pickle.dump(cenH_total_small, F)
+# if mode == 1:
+#     # save state_list
+#     with open('cenH_small_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
+#         pickle.dump(cenH_total_small, F)
         
-    # save state_list
-    with open('cenH_m_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
-        pickle.dump(cenH_total_m, F)
+#     # save state_list
+#     with open('cenH_m_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
+#         pickle.dump(cenH_total_m, F)
         
-    # save state_list
-    with open('cenH_large_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
-      pickle.dump(cenH_total_large, F)
+#     # save state_list
+#     with open('cenH_large_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
+#       pickle.dump(cenH_total_large, F)
         
-    # save state_list
-    with open('cenH_max_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
-        pickle.dump(cenH_total_max, F)
+#     # save state_list
+#     with open('cenH_max_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
+#         pickle.dump(cenH_total_max, F)
         
         
         
     
         
-    # save state_list
-    with open('EcoRV_small_1x_gAtoU100_UtoM100_S50.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_small, F)
+#     # save state_list
+#     with open('EcoRV_small_1x_gAtoU100_UtoM100_S50.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_small, F)
         
-    # save state_list
-    with open('EcoRV_m_1x_gAtoU100_UtoM70_S50.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_m, F)
+#     # save state_list
+#     with open('EcoRV_m_1x_gAtoU100_UtoM70_S50.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_m, F)
         
-    # save state_list
-    with open('EcoRV_large_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_large, F)
+#     # save state_list
+#     with open('EcoRV_large_1x_gAtoU70_UtoM70_S50.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_large, F)
         
-    # save state_list
-    with open('EcoRV_max_1_gAtoU70_UtoM70_S50.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_max, F)
+#     # save state_list
+#     with open('EcoRV_max_1_gAtoU70_UtoM70_S50.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_max, F)
         
 
-elif mode == 2:
-    # save state_list
-    with open('cenH_small_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-        pickle.dump(cenH_total_small, F)
+# elif mode == 2:
+#     # save state_list
+#     with open('cenH_small_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#         pickle.dump(cenH_total_small, F)
         
-    # save state_list
-    with open('cenH_m_1x075_gAtoU100_UtoM100_200.txt', 'wb') as F:
-        pickle.dump(cenH_total_m, F)
+#     # save state_list
+#     with open('cenH_m_1x075_gAtoU100_UtoM100_200.txt', 'wb') as F:
+#         pickle.dump(cenH_total_m, F)
         
-    # save state_list
-    with open('cenH_large_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-      pickle.dump(cenH_total_large, F)
+#     # save state_list
+#     with open('cenH_large_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#       pickle.dump(cenH_total_large, F)
         
-    # save state_list
-    with open('cenH_max_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-        pickle.dump(cenH_total_max, F)
+#     # save state_list
+#     with open('cenH_max_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#         pickle.dump(cenH_total_max, F)
         
         
         
     
         
-    # save state_list
-    with open('EcoRV_small_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_small, F)
+#     # save state_list
+#     with open('EcoRV_small_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_small, F)
         
-    # save state_list
-    with open('EcoRV_m_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_m, F)
+#     # save state_list
+#     with open('EcoRV_m_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_m, F)
         
-    # save state_list
-    with open('EcoRV_large_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_large, F)
+#     # save state_list
+#     with open('EcoRV_large_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_large, F)
         
-    # save state_list
-    with open('EcoRV_max_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_max, F)
-        
-        
+#     # save state_list
+#     with open('EcoRV_max_1x075_gAtoU100_UtoM100_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_max, F)
         
         
-elif mode == 3:
+        
+        
+# elif mode == 3:
      
-    # save state_list
-    with open('cenH_small_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-        pickle.dump(cenH_total_small, F)
+#     # save state_list
+#     with open('cenH_small_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#         pickle.dump(cenH_total_small, F)
         
-    # save state_list
-    with open('cenH_m_1x05_gAtoU100_UtoM70_200.txt', 'wb') as F:
-        pickle.dump(cenH_total_m, F)
+#     # save state_list
+#     with open('cenH_m_1x05_gAtoU100_UtoM70_200.txt', 'wb') as F:
+#         pickle.dump(cenH_total_m, F)
         
-    # save state_list
-    with open('cenH_large_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-      pickle.dump(cenH_total_large, F)
+#     # save state_list
+#     with open('cenH_large_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#       pickle.dump(cenH_total_large, F)
         
-    # save state_list
-    with open('cenH_max_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-        pickle.dump(cenH_total_max, F)
+#     # save state_list
+#     with open('cenH_max_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#         pickle.dump(cenH_total_max, F)
         
         
         
     
         
-    # save state_list
-    with open('EcoRV_small_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_small, F)
+#     # save state_list
+#     with open('EcoRV_small_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_small, F)
         
-    # save state_list
-    with open('EcoRV_m_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_m, F)
+#     # save state_list
+#     with open('EcoRV_m_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_m, F)
         
-    # save state_list
-    with open('EcoRV_large_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_large, F)
+#     # save state_list
+#     with open('EcoRV_large_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_large, F)
         
-    # save state_list
-    with open('EcoRV_max_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_max, F)
+#     # save state_list
+#     with open('EcoRV_max_1x05_gAtoU100_UtoM70_S200.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_max, F)
         
         
         
-elif mode == 4:
+# elif mode == 4:
      
-    # save state_list
-    with open('cenH_small_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-        pickle.dump(cenH_total_small, F)
+#     # save state_list
+#     with open('cenH_small_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#         pickle.dump(cenH_total_small, F)
         
-    # save state_list
-    with open('cenH_m_1x025_gAtoU90_UtoM95_120.txt', 'wb') as F:
-        pickle.dump(cenH_total_m, F)
+#     # save state_list
+#     with open('cenH_m_1x025_gAtoU90_UtoM95_120.txt', 'wb') as F:
+#         pickle.dump(cenH_total_m, F)
         
-    # save state_list
-    with open('cenH_large_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-      pickle.dump(cenH_total_large, F)
+#     # save state_list
+#     with open('cenH_large_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#       pickle.dump(cenH_total_large, F)
         
-    # save state_list
-    with open('cenH_max_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-        pickle.dump(cenH_total_max, F)
+#     # save state_list
+#     with open('cenH_max_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#         pickle.dump(cenH_total_max, F)
         
         
         
     
         
-    # save state_list
-    with open('EcoRV_small_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_small, F)
+#     # save state_list
+#     with open('EcoRV_small_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_small, F)
         
-    # save state_list
-    with open('EcoRV_m_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_m, F)
+#     # save state_list
+#     with open('EcoRV_m_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_m, F)
         
-    # save state_list
-    with open('EcoRV_large_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_large, F)
+#     # save state_list
+#     with open('EcoRV_large_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_large, F)
         
-    # save state_list
-    with open('EcoRV_max_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
-        pickle.dump(EcoRV_total_max, F)
+#     # save state_list
+#     with open('EcoRV_max_1x025_gAtoU90_UtoM95_S120.txt', 'wb') as F:
+#         pickle.dump(EcoRV_total_max, F)
 
 
 
@@ -548,51 +548,21 @@ plt.legend(fontsize=35)
 plt.tick_params(width=4,length=4)
 
 if mode == 1:
-    plt.savefig("timecourse_1x_gAtoU70_UtoM70_S120.pdf")
+    plt.savefig("timecourse_1x_gAtoU70_UtoM50_S120.pdf")
     
 elif mode == 2:
-    plt.savefig("timecourse_075x_gAtoU100_UtoM100_S200.pdf")
+    plt.savefig("timecourse_075x_gAtoU50_UtoM140_S250.pdf")
     
 elif mode == 3:
-    plt.savefig("timecourse_05x_gAtoU100_UtoM70_S200.pdf")
+    plt.savefig("timecourse_05x_gAtoU60_UtoM100_S120.pdf")
     
 elif mode == 4:
-    plt.savefig("timecourse_025x_gAtoU90_UtoM95_S120.pdf")
+    plt.savefig("timecourse_025x_gAtoU130_UtoM30_S120.pdf")
     
 
-# ## save state_list
-# with open('cenH_small_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     cenH_total_small = pickle.load(F)
 
-# ## save state_list
-# with open('cenH_m_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     cenH_total_m = pickle.load(F)
 
-# ## save state_list
-# with open('cenH_large_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     cenH_total_large = pickle.load(F)
-    
-# ## save state_list
-# with open('cenH_max_1x_gAtoU70_UtoM70_S120txt', 'rb') as F:
-#     cenH_total_max = pickle.load(F)
 
-    
-    
-# ## save state_list
-# with open('EcoRV_small_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     EcoRV_total_small = pickle.load(F)
-    
-# ## save state_list
-# with open('EcoRV_m_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     EcoRV_total_m = pickle.load(F)
-    
-# ## save state_list
-# with open('EcoRV_large_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     EcoRV_total_large = pickle.load(F)
-    
-#  # save state_list
-# with open('EcoRV_max_1x_gAtoU70_UtoM70_S120.txt', 'rb') as F:
-#     EcoRV_total_max = pickle.load(F)
     
 
 

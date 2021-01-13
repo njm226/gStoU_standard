@@ -251,7 +251,6 @@ def t_loop(double duration, int[:] mt_region, int[:] positions, double[:] rates,
                    mt_region[pos_conv]= 0
                    
                    
-                   
         # if the local recruitment-rate (recruited conversion of A (0) to U (1)) is chosen         
         elif low_t_index == 7:  
             
