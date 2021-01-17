@@ -6,7 +6,7 @@ from StoU import t_loop
 import StoU
 import importlib
 importlib.reload(StoU)
-#import pandas as pd
+#mport pandas as pd
 #import matplotlib.pyplot as plt
 
 def simple(X_Y):
@@ -142,7 +142,7 @@ def simple(X_Y):
 #     import time
 #     #import cProfile
 #     t1 = time.time()
-#     simple([153, 40, 60, 0])
+#     simple([203, 110, 10, 0])
 #     print(time.time() - t1)
 
 
@@ -152,7 +152,7 @@ def simple(X_Y):
 #     import time
 #     #import cProfile
 #     t1 = time.time()
-#     simple([203, 80, 40, 1])
+#     simple([153, 100, 80, 1])
 #     print(time.time() - t1)
 
 
@@ -161,7 +161,7 @@ def simple(X_Y):
 #     import time
 #     #import cProfile
 #     t1 = time.time()
-#     simple([182, 80, 80, 2])
+#     simple([203, 50, 60, 2])
 #     print(time.time() - t1)
 
 
@@ -170,7 +170,7 @@ def simple(X_Y):
 #     import time
 #     #import cProfile
 #     t1 = time.time()
-#     simple([191, 70, 80, 3])
+#     simple([203, 40, 20, 3])
 #     print(time.time() - t1)
     
     
