@@ -10,7 +10,7 @@ histogramm and timecourse data
 import numpy as np
 #import pandas as pd
 import matplotlib.pyplot as plt
-#from smaller_model_function_AtoU import simple_small as ss
+#from smaller_model_function_StoU import simple_small as ss
 from StoU_model import simple as ss
 import multiprocessing
 #import time
@@ -21,28 +21,28 @@ pool = multiprocessing.Pool(multiprocessing.cpu_count())
 mode = 3
     
 if mode == 1:
-    X_Y=[[153,70,50, 1]]
-    X_Y_sm=[[182,70,50, 1]]
-    X_Y_sl=[[191,70,50, 1]]
-    X_Y_max=[[203,70,50, 1]]
+    X_Y=[[153,110,20, 1]]
+    X_Y_sm=[[182,110,20, 1]]
+    X_Y_sl=[[191,110,20, 1]]
+    X_Y_max=[[203,110,20, 1]]
     
 elif mode == 2:
-    X_Y=[[153, 50, 140, 2]]
-    X_Y_sm=[[182, 50, 140, 2]]
-    X_Y_sl=[[191, 50, 140, 2]]
-    X_Y_max=[[203, 50, 140, 2]]
+    X_Y=[[153, 150, 10, 2]]
+    X_Y_sm=[[182, 150, 10, 2]]
+    X_Y_sl=[[191, 150, 10, 2]]
+    X_Y_max=[[203, 150, 10, 2]]
     
 elif mode == 3:
-    X_Y=[[153, 60, 100, 3]]
-    X_Y_sm=[[182, 60, 100, 3]]
-    X_Y_sl=[[191, 60, 100, 3]]
-    X_Y_max=[[203, 60, 100, 3]]
+    X_Y=[[153, 70, 50, 3]]
+    X_Y_sm=[[182, 70, 50, 3]]
+    X_Y_sl=[[191, 70, 50, 3]]
+    X_Y_max=[[203, 70, 50, 3]]
     
 elif mode == 4:
-    X_Y=[[153, 130, 30, 4]]
-    X_Y_sm=[[182, 130, 30, 4]]
-    X_Y_sl=[[191, 130, 30, 4]]
-    X_Y_max=[[203, 130, 30, 4]]
+    X_Y=[[153, 110, 30, 4]]
+    X_Y_sm=[[182, 110, 30, 4]]
+    X_Y_sl=[[191, 110, 30, 4]]
+    X_Y_max=[[203, 110, 30, 4]]
 
 
 reps=10000
@@ -548,16 +548,16 @@ plt.legend(fontsize=35)
 plt.tick_params(width=4,length=4)
 
 if mode == 1:
-    plt.savefig("timecourse_1x_gAtoU70_UtoM50_S120.pdf")
+    plt.savefig("timecourse_1x_gAtoU110_UtoM20_S20.pdf")
     
 elif mode == 2:
-    plt.savefig("timecourse_075x_gAtoU50_UtoM140_S250.pdf")
+    plt.savefig("timecourse_075x_gAtoU150_UtoM10_S20.pdf")
     
 elif mode == 3:
-    plt.savefig("timecourse_05x_gAtoU60_UtoM100_S120.pdf")
+    plt.savefig("timecourse_05x_gAtoU70_UtoM50_S20.pdf")
     
 elif mode == 4:
-    plt.savefig("timecourse_025x_gAtoU130_UtoM30_S120.pdf")
+    plt.savefig("timecourse_025x_gAtoU110_UtoM30_S20.pdf")
     
 
 
