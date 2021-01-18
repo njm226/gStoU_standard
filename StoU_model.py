@@ -174,11 +174,11 @@ def simple(X_Y):
 #     print(time.time() - t1)
     
     
-# #values for 1/(X^0.25) (special set to 150)
-if __name__ == '__main__':
-    import time
-    #import cProfile
-    t1 = time.time()
-    simple([203, 110, 30, 4])
-    print(time.time() - t1)
+# # #values for 1/(X^0.25) (special set to 150)
+# if __name__ == '__main__':
+#     import time
+#     #import cProfile
+#     t1 = time.time()
+#     simple([203, 110, 30, 4])
+#     print(time.time() - t1)
 
