@@ -22,10 +22,10 @@ pool = multiprocessing.Pool(multiprocessing.cpu_count())
 mode = 1
     
 if mode == 1:
-    X_Y=[[153,110,20, 1]]
-    X_Y_sm=[[182,110,20, 1]]
-    X_Y_sl=[[191,110,20, 1]]
-    X_Y_max=[[203,110,20, 1]]
+    X_Y=[[153,100,20, 1]]
+    X_Y_sm=[[182,100,20, 1]]
+    X_Y_sl=[[191,100,20, 1]]
+    X_Y_max=[[203,100,20, 1]]
     
 elif mode == 2:
     X_Y=[[153, 150, 10, 2]]
