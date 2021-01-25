@@ -21,6 +21,7 @@ pool = multiprocessing.Pool(multiprocessing.cpu_count())
 mode = 0
     
 if mode == 0:
+    
     X_Y=[[153,30,60, 0]]
     X_Y_sm=[[182,30,60, 0]]
     X_Y_sl=[[191,30,60, 0]]
