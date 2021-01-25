@@ -22,10 +22,10 @@ mode = 0
     
 if mode == 0:
     
-    X_Y=[[153,30,60, 0]]
-    X_Y_sm=[[182,30,60, 0]]
-    X_Y_sl=[[191,30,60, 0]]
-    X_Y_max=[[203,30,60, 0]]
+    X_Y=[[153,40,60, 0]]
+    X_Y_sm=[[182,40,60, 0]]
+    X_Y_sl=[[191,40,60, 0]]
+    X_Y_max=[[203,40,60, 0]]
     
 if mode == 1:
     X_Y=[[153,70,70, 1]]
@@ -591,7 +591,7 @@ plt.legend(fontsize=35)
 plt.tick_params(width=4,length=4)
 
 if mode == 0:
-    plt.savefig("timecourse_1x_gAtoU30_UtoM60_S120.pdf")
+    plt.savefig("timecourse_full_gAtoU40_UtoM60_S120.pdf")
 
 elif mode == 1:
     plt.savefig("timecourse_1x_gAtoU70_UtoM50_S120.pdf")
